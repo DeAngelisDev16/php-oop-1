@@ -1,6 +1,10 @@
 <?php
 require_once __DIR__ . '/classes/Movie.php';
 
+$batman = new Movie('batman', 125, 'action');
+$toyStory = new Movie('Toy Story', 75, 'animation');
+$durata_batman = $batman->getMovieDuration();
+
 ?>
 
 
@@ -17,13 +21,23 @@ require_once __DIR__ . '/classes/Movie.php';
 </head>
 
 <body>
-    <?php
 
-    var_dump($batman);
-    var_dump($toyStory);
-    var_dump($batman->getMovieDuration());
 
-    ?>
+
+    <div>
+        <h2>Batman</h2>
+        <span>Durata: min</span>
+        <?php
+        echo $durata_batman;
+        ?>
+    </div>
+
+
+
+
+
+
+
 
 
 
