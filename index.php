@@ -2,7 +2,7 @@
 require_once __DIR__ . '/classes/Movie.php';
 
 $batman = new Movie('The Dark Knight Returns', 125, 'action');
-$toyStory = new Movie('Toy Story', 75, 'animation');
+$toy_story = new Movie('Toy Story', 75, 'animation');
 
 
 ?>
@@ -24,7 +24,7 @@ $toyStory = new Movie('Toy Story', 75, 'animation');
 
 
 
-    <div>
+    <div id="batman">
         <h2>Batman</h2>
         <div>Nome film:
             <?php
@@ -41,6 +41,29 @@ $toyStory = new Movie('Toy Story', 75, 'animation');
         <div>Genere:
             <?php
             echo $batman->getMovieGenre();
+            ?>
+
+        </div>
+    </div>
+
+
+    <div id="toy_story">
+        <h2>Toy Story</h2>
+        <div>Nome film:
+            <?php
+            echo $toy_story->getMovieTitle();
+            ?>
+
+        </div>
+        <div>Durata: min
+            <?php
+            echo $toy_story->getMovieDuration();
+            ?>
+
+        </div>
+        <div>Genere:
+            <?php
+            echo $toy_story->getMovieGenre();
             ?>
 
         </div>
