@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/classes/Movie.php';
 
-$batman = new Movie('batman', 125, 'action');
+$batman = new Movie('The Dark Knight Returns', 125, 'action');
 $toyStory = new Movie('Toy Story', 75, 'animation');
-$durata_batman = $batman->getMovieDuration();
+
 
 ?>
 
@@ -26,10 +26,24 @@ $durata_batman = $batman->getMovieDuration();
 
     <div>
         <h2>Batman</h2>
-        <span>Durata: min</span>
-        <?php
-        echo $durata_batman;
-        ?>
+        <div>Nome film:
+            <?php
+            echo $batman->getMovieTitle();
+            ?>
+
+        </div>
+        <div>Durata: min
+            <?php
+            echo $batman->getMovieDuration();
+            ?>
+
+        </div>
+        <div>Genere:
+            <?php
+            echo $batman->getMovieGenre();
+            ?>
+
+        </div>
     </div>
 
 

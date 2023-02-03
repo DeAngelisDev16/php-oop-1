@@ -21,4 +21,14 @@ class Movie
     {
         return $this->duration;
     }
+
+    public function getMovieTitle()
+    {
+        return $this->name;
+    }
+
+    public function getMovieGenre()
+    {
+        return $this->genre;
+    }
 }
