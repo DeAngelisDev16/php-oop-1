@@ -16,3 +16,6 @@ class Movie
         $this->name = $_genre;
     }
 }
+
+$batman = new Movie('batman', 125, 'action');
+$toyStory = new Movie('Toy Story', 75, 'animation');
