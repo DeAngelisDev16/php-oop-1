@@ -15,9 +15,16 @@ class Movie
         $this->duration = $_duration;
         $this->genre = $_genre;
     }
+
+    //capacità condivisa:
+    public function getMovieDuration($movie)
+    {
+        return $this->duration;
+    }
 }
 
 $batman = new Movie('batman', 125, 'action');
 $toyStory = new Movie('Toy Story', 75, 'animation');
 
-var_dump($batman);
+//var_dump($batman);
+//var_dump($toyStory);
