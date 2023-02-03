@@ -17,7 +17,7 @@ class Movie
     }
 
     //capacità condivisa:
-    public function getMovieDuration($movie)
+    public function getMovieDuration()
     {
         return $this->duration;
     }
