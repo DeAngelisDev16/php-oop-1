@@ -13,9 +13,11 @@ class Movie
     {
         $this->name = $_name;
         $this->duration = $_duration;
-        $this->name = $_genre;
+        $this->genre = $_genre;
     }
 }
 
 $batman = new Movie('batman', 125, 'action');
 $toyStory = new Movie('Toy Story', 75, 'animation');
+
+var_dump($batman);
